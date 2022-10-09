@@ -207,7 +207,7 @@ a:hover{
     /* background:url('./images/istockphoto-931737016-612x612.jpg'); */
     
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     
@@ -249,17 +249,52 @@ h1{
     text-align: center;
 }
 
-@media (max-width:800px){
-  .content{
-      font-size: 1.5rem;  
-  } 
-  #navbar{
-    font-size:1.75rem;
-  }
-  ul li a{
-    padding:0.75rem;
-  }
-  .heading{
-    font-size: 1.8rem;
-  }
+@media only screen and (max-width:800px){
+    .overlay{
+        height: 70vh;
+       }
+      .content{
+          font-size: 1.25rem;  
+      } 
+      #navbar{
+        font-size:1.2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      ul{
+        padding:1rem;
+      }
+      ul li a{
+        padding:0.5rem;
+      }
+      .heading{
+        font-size: 1.6rem;
+      }
+      .part{
+        font-size: 2rem;
+      }
+.containers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container1,.container3{
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.container2{
+    display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  text-align: center;
+
+}
+.containers img{
+    width:80%;
+    height:70%;
+    margin:auto;
+}
 }
